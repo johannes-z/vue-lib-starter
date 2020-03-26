@@ -2,8 +2,6 @@ import path from 'path'
 import alias from '@rollup/plugin-alias'
 import replace from '@rollup/plugin-replace'
 
-const projectRoot = path.resolve(__dirname, '..')
-
 export const baseConfig = {
   input: 'src/main.ts',
   plugins: {
@@ -14,7 +12,10 @@ export const baseConfig = {
       alias({
         resolve: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
         entries: {
-          '@': path.resolve(projectRoot, 'src'),
+          '@': path.resolve(
+            path.resolve(__dirname, '..'),
+            'src'
+          ),
         },
       }),
     ],

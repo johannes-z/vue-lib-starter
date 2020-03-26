@@ -2,7 +2,7 @@
   "name": "pkgName",
   "version": "1.0.0",
   "main": "dist/pkgName.umd.min.js",
-  "module": "lib/main.js",
+  "module": "lib/src/main.js",
   "types": "types/main.d.ts",
   "license": "MIT",
   "scripts": {
@@ -34,7 +34,7 @@
     "vue-template-compiler": "^2.6.11"
   },
   "dependencies": {
-    "@vue-tsx/vue": "^0.1.1-alpha.0",
+    "@vue/composition-api": "^0.5.0",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^8.4.1"

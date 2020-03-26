@@ -1,10 +1,12 @@
 <script lang="tsx">
 import { Vue, Component } from 'vue-property-decorator'
 import HelloWorld from './HelloWorld.vue'
+import MyButton from './MyButton.vue'
 
 @Component({
   components: {
     HelloWorld,
+    MyButton,
   },
 })
 export default class App extends Vue {
@@ -15,12 +17,14 @@ export default class App extends Vue {
   }
 
   render () {
+    // @ts-ignore
     return (
       <div>
-        // @ts-ignore
-      <HelloWorld msg={'World'} />
-      <br />
-      {this.renderStuff()}
+        <HelloWorld msg={'World'} />
+        <MyButton />
+        <MyButton />
+        <br />
+        {this.renderStuff()}
       </div>
     )
   }

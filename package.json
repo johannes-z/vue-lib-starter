@@ -1,7 +1,7 @@
 {
-  "name": "pkgName",
+  "name": "PKGNAME",
   "version": "1.0.0",
-  "main": "dist/pkgName.umd.min.js",
+  "main": "dist/PKGNAME.umd.min.js",
   "module": "lib/src/main.js",
   "types": "types/main.d.ts",
   "license": "MIT",

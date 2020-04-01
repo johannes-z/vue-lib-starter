@@ -12,9 +12,9 @@ export const baseConfig = {
       alias({
         resolve: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
         entries: {
-          '@': path.resolve(
+          '@/': path.resolve(
             path.resolve(__dirname, '..'),
-            'src'
+            'src/'
           ),
         },
       }),

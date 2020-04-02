@@ -25,9 +25,6 @@ export const esConfig = {
         [
           '@vue/cli-plugin-babel/preset',
           {
-            // corejs: 3,
-            // useBuiltIns: 'usage',
-            corejs: false,
             useBuiltIns: false,
             polyfills: false,
           },

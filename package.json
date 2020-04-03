@@ -8,7 +8,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
-    "build": "yarn lint && build:main && build:module",
+    "build": "cross-env NODE_ENV=production yarn lint && yarn build:main && yarn build:module",
     "build:main": "vue-cli-service build --target lib --formats umd-min",
     "build:module": "rollup --config build/rollup.config.js"
   },
@@ -19,6 +19,7 @@
     "vue-property-decorator": "^8.4.1"
   },
   "devDependencies": {
+    "cross-env": "^7.0.2",
     "sass": "^1.26.3",
     "sass-loader": "^8.0.2",
     "typescript": "~3.8.3",

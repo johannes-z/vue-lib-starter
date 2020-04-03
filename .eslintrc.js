@@ -38,12 +38,13 @@ module.exports = {
     "vue/no-parsing-error": [2, {
       "x-invalid-end-tag": false
     }],
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
   },
 
   parserOptions: {
     parser: '@typescript-eslint/parser',
+    ecmaVersion: 2020,
     ecmaFeatures: {
       jsx: true,
     },

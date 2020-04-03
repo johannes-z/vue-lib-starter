@@ -1,5 +1,4 @@
 import Vue from 'vue'
-import './setup'
 import App from './App.vue'
 
 import pkg from '../package.json'

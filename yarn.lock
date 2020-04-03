@@ -7681,7 +7681,7 @@ rollup-plugin-typescript2@^0.27.0:
 rollup-plugin-vue@5.1.1:
   version "5.1.1"
   resolved "https://tfs.corner4.com/tfs/C4Projects/_packaging/C4.CS/npm/registry/rollup-plugin-vue/-/rollup-plugin-vue-5.1.1.tgz#cbba4c5bb9344d483cd66635414e4c4e974771f4"
-  integrity sha512-lSIiiaNfwOWpbAN7Z1ZQzY0WUIa6+6cVopZrICBlrSKqGpmlkHm2+cgCtv1PsY5EkR0ZasHoeNNQn5b2B8HvkA==
+  integrity sha1-y7pMW7k0TUg81mY1QU5MTpdHcfQ=
   dependencies:
     "@vue/component-compiler" "^4.1.0"
     "@vue/component-compiler-utils" "^3.0.0"
@@ -7963,7 +7963,7 @@ slash@^2.0.0:
 slash@^3.0.0:
   version "3.0.0"
   resolved "https://tfs.corner4.com/tfs/C4Projects/_packaging/C4.CS/npm/registry/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
-  integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
+  integrity sha1-ZTm+hwwWWtvVJAIg2+Nh8bxNRjQ=
 
 slice-ansi@^2.1.0:
   version "2.1.0"

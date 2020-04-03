@@ -8,6 +8,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
+    "build": "yarn lint && build:main && build:module",
     "build:main": "vue-cli-service build --target lib --formats umd-min",
     "build:module": "rollup --config build/rollup.config.js"
   },

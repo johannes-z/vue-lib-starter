@@ -2,6 +2,8 @@ import Vue from 'vue'
 import './setup'
 import App from './App.vue'
 
+import pkg from '../package.json'
+
 export {
   App,
 }
@@ -13,3 +15,5 @@ if (process.env.NODE_ENV !== 'production') {
     render: h => h(App),
   })
 }
+
+console.log(`${pkg.name} - v${pkg.version}`)

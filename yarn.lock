@@ -7685,10 +7685,10 @@ rollup-plugin-typescript2@^0.27.0:
     resolve "1.15.1"
     tslib "1.11.1"
 
-rollup-plugin-vue@5.1.1:
-  version "5.1.1"
-  resolved "https://tfs.corner4.com/tfs/C4Projects/_packaging/C4.CS/npm/registry/rollup-plugin-vue/-/rollup-plugin-vue-5.1.1.tgz#cbba4c5bb9344d483cd66635414e4c4e974771f4"
-  integrity sha1-y7pMW7k0TUg81mY1QU5MTpdHcfQ=
+rollup-plugin-vue@^5.1.6:
+  version "5.1.6"
+  resolved "https://tfs.corner4.com/tfs/C4Projects/_packaging/C4.CS/npm/registry/rollup-plugin-vue/-/rollup-plugin-vue-5.1.6.tgz#c0b31de919ff1aad36f3277957ac90345e897c23"
+  integrity sha1-wLMd6Rn/Gq028yd5V6yQNF6JfCM=
   dependencies:
     "@vue/component-compiler" "^4.1.0"
     "@vue/component-compiler-utils" "^3.0.0"

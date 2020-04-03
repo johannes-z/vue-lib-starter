@@ -1,12 +1,11 @@
 <script lang="tsx">
 import { Vue, Component } from 'vue-property-decorator'
-import HelloWorld from './HelloWorld.vue'
 
-@Component({
-  components: {
-    HelloWorld,
-  },
+const HelloWorld = (): any => ({
+  component: import('./HelloWorld.vue'),
 })
+
+@Component
 export default class App extends Vue {
   async mounted () {
     const test = await this.test()
@@ -18,7 +17,7 @@ export default class App extends Vue {
     // @ts-ignore
     return (
       <div>
-        <HelloWorld msg={'World'} />
+        <HelloWorld msg={'World 123'} />
         <br />
         {this.renderStuff()}
       </div>

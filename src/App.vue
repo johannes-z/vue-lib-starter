@@ -1,11 +1,12 @@
 <script lang="tsx">
 import { Vue, Component } from 'vue-property-decorator'
+import HelloWorld from './HelloWorld.vue'
 
-const HelloWorld = (): any => ({
-  component: import('./HelloWorld.vue'),
+// const HelloWorld = (): any => import('./HelloWorld.vue')
+
+@Component({
+
 })
-
-@Component
 export default class App extends Vue {
   async mounted () {
     const test = await this.test()

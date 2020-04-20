@@ -5,34 +5,36 @@ import typescript from 'rollup-plugin-typescript2'
 // @ts-ignore
 import babel from 'rollup-plugin-babel'
 import { baseConfig } from './rollup.config.base'
+import pkg from '../package.json'
 
-export const esConfig = {
+export default {
   ...baseConfig,
-  // external: id => /node_modules/.test(id) || Object.keys(pkg.dependencies).indexOf(id) > -1,
+  // external: [
+  //   /id/,
+  //   'id2',
+  // ],
   output: {
-    dir: 'lib',
-    // file: 'dist/test.esm.js',
+    file: pkg.module,
     format: 'esm',
   },
-  preserveModules: true,
+  inlineDynamicImports: true,
   plugins: [
     ...baseConfig.plugins.preVue,
     vue(baseConfig.plugins.vue),
+    resolve(),
+    commonjs(),
     typescript(baseConfig.plugins.typescript),
     babel({
       ...baseConfig.plugins.babel,
+      configFile: false,
       presets: [
-        [
-          '@vue/cli-plugin-babel/preset',
-          {
-            useBuiltIns: false,
-            polyfills: false,
-          },
-        ],
+        ['@vue/cli-plugin-babel/preset', {
+          modules: false,
+          useBuiltIns: false,
+          polyfills: [],
+        }],
       ],
       runtimeHelpers: true,
     }),
-    resolve(),
-    commonjs(),
   ],
 }

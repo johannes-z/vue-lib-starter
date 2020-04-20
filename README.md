@@ -2,7 +2,8 @@
 A scaffolding template using `@vue/cli` for development and browser bundels, and `rollup` for esm builds to be used by
 consuming apps.
 
-
+## Caveats
+* Code-splitting is not supported for `UMD` builds.
 
 ## :warning:
 As of today `rollup-plugin-vue` and `@babel/plugin-transform-runtime` resolve path's wrongly breaking the rollup build.

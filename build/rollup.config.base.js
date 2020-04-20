@@ -14,9 +14,9 @@ export const baseConfig = {
       alias({
         resolve: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
         entries: {
-          '@/': path.resolve(
+          '@': path.resolve(
             path.resolve(__dirname, '..'),
-            'src/'
+            'src',
           ),
         },
       }),
@@ -31,11 +31,12 @@ export const baseConfig = {
       abortOnError: false,
       typescript: require('typescript'),
       useTsconfigDeclarationDir: true,
+      // clean: true,
     },
     babel: {
-      exclude: 'node_modules/**',
+      exclude: /node_modules/,
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
-      plugins: [ ],
+      plugins: [],
     },
   },
 }

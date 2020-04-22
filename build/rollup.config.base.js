@@ -27,12 +27,12 @@ export const baseConfig = {
         isProduction: true,
       },
     },
-    typescript: {
-      abortOnError: false,
-      typescript: require('typescript'),
-      useTsconfigDeclarationDir: true,
-      // clean: true,
-    },
+    // typescript: {
+    //   abortOnError: false,
+    //   typescript: require('typescript'),
+    //   useTsconfigDeclarationDir: true,
+    //   // clean: true,
+    // },
     babel: {
       exclude: /node_modules/,
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue'],

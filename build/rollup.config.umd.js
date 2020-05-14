@@ -13,7 +13,8 @@ import fs from 'fs'
 
 const browserslist = fs.readFileSync('.browserslistrc')
   .toString()
-  .split('\r\n')
+  .replace(/\r/g, '')
+  .split('\n')
 
 /**
  * @vue/cli-plugin-babel/preset excludes certain polyfills when VUE_CLI_BUILD_TARGET is not set.

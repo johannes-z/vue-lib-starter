@@ -9,10 +9,7 @@ import pkg from '../package.json'
 
 export default {
   ...baseConfig,
-  // external: [
-  //   /id/,
-  //   'id2',
-  // ],
+  external: Object.keys(pkg.dependencies),
   output: {
     file: pkg.module,
     format: 'esm',

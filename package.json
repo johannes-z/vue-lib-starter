@@ -9,7 +9,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
-    "build": "cross-env NODE_ENV=production yarn build:browser && yarn:build:module",
+    "build": "cross-env NODE_ENV=production yarn build:browser && yarn build:module",
     "build:browser": "rollup --config build/rollup.config.umd.js",
     "build:module": "rollup --config build/rollup.config.esm.js"
   },

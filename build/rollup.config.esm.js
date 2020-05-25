@@ -18,8 +18,14 @@ export default {
   plugins: [
     ...baseConfig.plugins.preVue,
     vue(baseConfig.plugins.vue),
-    resolve(),
-    commonjs(),
+    resolve({
+      browser: true,
+      jsnext: true,
+      preferBuiltins: true,
+    }),
+    commonjs({
+      include: /node_modules/,
+    }),
     typescript(baseConfig.plugins.typescript),
     babel({
       ...baseConfig.plugins.babel,

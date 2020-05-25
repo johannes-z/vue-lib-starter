@@ -3,6 +3,9 @@ import alias from '@rollup/plugin-alias'
 import replace from '@rollup/plugin-replace'
 import json from '@rollup/plugin-json'
 
+import commonjs from '@rollup/plugin-commonjs'
+import resolve from '@rollup/plugin-node-resolve'
+
 export const baseConfig = {
   input: 'src/main.ts',
   plugins: {
@@ -19,6 +22,14 @@ export const baseConfig = {
             'src',
           ),
         },
+      }),
+      resolve({
+        browser: true,
+        jsnext: true,
+        preferBuiltins: true,
+      }),
+      commonjs({
+        include: /node_modules/,
       }),
     ],
     vue: {

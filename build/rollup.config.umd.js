@@ -1,6 +1,4 @@
 import vue from 'rollup-plugin-vue'
-import commonjs from '@rollup/plugin-commonjs'
-import resolve from '@rollup/plugin-node-resolve'
 import typescript from 'rollup-plugin-typescript2'
 // @ts-ignore
 import babel from 'rollup-plugin-babel'
@@ -54,8 +52,6 @@ export default {
       ],
       runtimeHelpers: true,
     }),
-    resolve(),
-    commonjs(),
     terser(),
   ],
 }
